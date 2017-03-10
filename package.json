@@ -1,0 +1,15 @@
+{
+  "name": "consumer-complaints",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "idyll index.idl --css styles.css"
+  },
+  "dependencies": {
+    "csv-parser": "^1.11.0",
+    "d3": "^3.0.0",
+    "idyll": "^1.0.0",
+    "react-vega-lite": "0.0.1",
+    "reactable": "^0.14.1"
+  },
+  "devDependencies": {}
+}

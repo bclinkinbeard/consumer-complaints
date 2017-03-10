@@ -1,0 +1,80 @@
+
+[data name:"complaintsByDate" source:"complaints-by-date" /]
+[data name:"complaints" source:"complaints" /]
+[data name:"complaintsVL" source:"complaints-vl" /]
+
+[Chart type:"time" className:"inset" data:complaintsByDate scale:"time" ref:"chart" /]
+[Table data:complaints progress:`refs.table.scrollProgress` ref:"table" /]
+
+[section ref:"ipsum" style:`{opacity: 1 - refs.ipsum.scrollProgress}` ]
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dolor arcu, ullamcorper non arcu suscipit, tincidunt condimentum nulla. Vestibulum eget interdum risus, vel luctus purus. Vivamus nec malesuada ipsum. Nam dui erat, porttitor ac lacus et, posuere elementum orci. Curabitur non ante sollicitudin, tincidunt massa ut, fringilla risus. Curabitur cursus risus erat, vel aliquet est consequat non. Nullam eget euismod elit, sit amet mollis nisl. Nulla varius ac purus ac porttitor.
+
+Fusce mattis metus nec lacus pretium sagittis. Vivamus molestie sem et ex dictum, sed finibus magna molestie. Nulla tempus a ipsum sit amet pellentesque. Nam venenatis elementum urna id pellentesque. Nullam et ante ut nisl semper luctus. Praesent id elit convallis turpis imperdiet facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas libero nisl, pharetra at neque eu, sollicitudin molestie augue. Sed sit amet pulvinar ante. Mauris aliquam in nisi sit amet efficitur. Sed urna mauris, maximus sit amet lobortis sed, molestie non augue.
+
+Sed tempus diam ac metus interdum dictum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas sit amet placerat nisl, eu mollis diam. Donec laoreet est vestibulum tincidunt volutpat. Praesent interdum dolor vel eleifend ultricies. Proin felis neque, rutrum semper ultrices vel, dapibus in ligula. Quisque at justo diam. Fusce eget ex in lorem finibus dapibus sed volutpat nibh. Mauris facilisis metus sit amet neque faucibus, feugiat vestibulum risus ornare. Phasellus auctor leo sed urna tincidunt, eget varius justo egestas. Phasellus quis viverra est, a congue libero. Sed dictum feugiat metus, tincidunt cursus diam dignissim vel.
+
+Etiam eget orci lectus. Cras finibus mi ut varius varius. Donec in efficitur ex. Nulla ut imperdiet ex. Sed ante mi, luctus et ligula rhoncus, facilisis tincidunt lacus. Mauris ut aliquam massa, luctus consectetur risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam condimentum diam at ex finibus gravida. Nulla in pharetra libero. Nam vestibulum dui dignissim sem tristique, vitae consequat urna imperdiet. Nam euismod justo nunc. Fusce pulvinar, nibh sed placerat mollis, eros urna placerat dolor, eu rhoncus nunc nibh a dui. Suspendisse aliquam ante a commodo iaculis.
+
+Sed leo ligula, aliquam laoreet velit eu, pulvinar pulvinar tortor. Morbi venenatis interdum tellus rutrum consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla vel sapien imperdiet, posuere magna eget, fermentum nunc. Proin sed urna at eros lobortis commodo non sed massa. Maecenas cursus elit ut justo pulvinar dictum. Vestibulum aliquet tellus feugiat volutpat pellentesque. Suspendisse consectetur venenatis rhoncus.
+
+Morbi vitae tincidunt arcu, a gravida ligula. Curabitur vitae metus cursus, ullamcorper arcu vitae, aliquam orci. Ut et auctor erat, placerat sagittis dolor. Ut aliquam, nisi et suscipit dictum, purus purus sodales eros, at vulputate libero ex vel turpis. Fusce laoreet ex varius erat eleifend, vel aliquet augue cursus. Morbi ac volutpat arcu. Quisque at ex id neque blandit condimentum porttitor ut eros. Pellentesque massa nisl, egestas vel lorem nec, vulputate feugiat massa. Suspendisse aliquam aliquet bibendum.
+
+Aenean ut libero sem. Sed aliquet, ante sit amet ullamcorper vestibulum, ex orci dictum nibh, id mollis turpis ipsum et libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec aliquam dui et rutrum placerat. Donec eget ligula ac turpis viverra maximus. Duis semper gravida dolor, sed gravida turpis porta non. Vestibulum eu diam quis purus tristique placerat vitae non lacus. Suspendisse non justo lacus. Sed ac diam sodales, interdum est vitae, tempus magna. Duis lectus purus, dapibus sed enim ut, dignissim ornare lacus. Suspendisse sit amet lacinia lectus.
+
+Nulla sodales suscipit ornare. Maecenas sit amet magna sollicitudin, blandit metus vitae, commodo velit. Ut vel pretium quam. Nam semper mauris massa, a mattis massa auctor elementum. Etiam sit amet pharetra risus, eget ullamcorper dui. Maecenas eget ligula aliquet orci vehicula scelerisque quis ut est. In hac habitasse platea dictumst. Duis nulla dolor, gravida ut urna quis, vehicula sollicitudin quam. Nulla facilisi. Mauris id accumsan ex.
+
+Maecenas non orci leo. Nulla vel augue malesuada, aliquam metus nec, tempus orci. Nulla convallis venenatis consequat. Donec in convallis est. Phasellus nec scelerisque magna, ut elementum nunc. Integer dignissim maximus massa a aliquet. Sed in est mauris. Maecenas est mauris, fermentum ac risus at, cursus volutpat arcu.
+
+Mauris sagittis augue vitae mauris venenatis dapibus. Pellentesque mattis arcu justo, sit amet faucibus magna congue quis. Quisque in justo ac urna mattis hendrerit eget et velit. Ut varius libero elit, sit amet dictum urna auctor a. Vivamus tempor blandit lacinia. Nunc lectus leo, imperdiet mattis volutpat non, aliquet ac dolor. Nulla id consequat nibh, eget imperdiet purus. Morbi efficitur orci finibus nibh lacinia, eget posuere lectus lobortis. Praesent elementum ipsum vel lorem facilisis, venenatis vulputate nulla aliquam. Mauris vitae velit ornare augue sagittis rutrum ac vitae orci. Sed consectetur nulla sit amet tellus sollicitudin, volutpat hendrerit ante placerat. Vestibulum ut ante a enim fermentum ornare sit amet eu neque. Quisque vitae scelerisque massa. Nam at ligula fermentum, tincidunt elit eu, facilisis dui. Phasellus tristique mattis ligula in pharetra. Maecenas laoreet ex eu lectus mollis ultrices.
+
+Fusce tellus nisi, tempus non ex vel, gravida pharetra tortor. Proin luctus metus sed orci efficitur, eu ultricies ipsum mollis. Morbi nulla tellus, tristique in enim a, tristique ornare diam. Aliquam sed enim blandit, aliquet erat id, consectetur turpis. Morbi vel ullamcorper nisi. Ut tristique eget augue nec tristique. Aenean bibendum id purus eu sagittis.
+
+Maecenas id mattis metus. Sed at dui massa. Sed dictum tristique risus, vulputate maximus mauris cursus vitae. In sit amet augue erat. Nunc id justo porta, blandit lectus sit amet, rutrum nulla. Nullam eleifend pulvinar leo quis tincidunt. Donec nulla erat, tincidunt ut arcu at, eleifend sollicitudin enim. Aenean at ultrices ipsum. Suspendisse eu neque eu purus pellentesque tempor in egestas turpis. Integer sagittis lorem sed sagittis euismod. Vestibulum sollicitudin lacus vel arcu suscipit, quis gravida ante rhoncus. Nulla facilisi. Quisque non efficitur metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam gravida tortor sed egestas porttitor. Mauris pellentesque scelerisque enim sed auctor.
+
+Cras condimentum, dolor eget dictum mollis, nisi nunc rutrum urna, sit amet posuere leo elit eget lacus. Mauris at mauris in velit consequat elementum. Aliquam vitae metus sit amet lectus scelerisque condimentum. Phasellus placerat euismod enim ac aliquet. Maecenas sed eros libero. Sed vestibulum finibus nibh et ultrices. Nunc in suscipit diam. Pellentesque non tortor ut erat pulvinar blandit. Quisque lacinia felis elit, in imperdiet mauris pellentesque et. Integer interdum, mi sed interdum varius, urna lorem accumsan nibh, sed venenatis dui tortor a mi. In hac habitasse platea dictumst. Ut nec turpis a tortor volutpat finibus. Vestibulum ullamcorper sagittis faucibus. Aliquam lacinia sapien nec ipsum maximus, ac suscipit velit luctus. Aenean nunc mi, posuere ut ultricies eget, pharetra id lectus.
+[/section]
+
+[Chart
+  ref:"pie"
+  className:"inset"
+  type:"pie"
+  data:`[{x: 0, y: refs.pie.scrollProgress}, {x: 1, y: 1 - refs.pie.scrollProgress}]` /]
+
+[DisplayVar ref:"scrollWatch" var:`refs.scrollWatch.scrollProgress` /]
+
+[section ref:"section2" style:`{opacity: refs.section2.scrollProgress}`]
+
+Nullam ac dolor sit amet metus hendrerit placerat. Etiam tempus euismod ultricies. Vivamus at lacinia arcu, a faucibus metus. Phasellus blandit nisi quis metus posuere, venenatis finibus lectus aliquet. Sed sed ipsum aliquam, facilisis libero quis, rutrum massa. Etiam porta mauris vel venenatis lacinia. Sed ornare nec eros tristique laoreet. Aliquam fermentum, nulla id semper maximus, sem turpis imperdiet elit, in sodales mauris felis in lacus. Duis auctor vitae nibh a lacinia. Nam efficitur viverra finibus. Aenean malesuada turpis ac libero bibendum luctus. Donec urna dui, faucibus eu posuere tempor, varius a sem. Nam tincidunt dolor turpis, vitae vestibulum felis egestas a. Phasellus dapibus vel neque ut pharetra.
+
+Sed pellentesque risus bibendum vulputate vehicula. Proin mollis blandit tortor, at tristique velit venenatis ac. Donec ac purus sit amet odio sollicitudin scelerisque. Quisque ornare commodo ultricies. Sed in ultricies metus, nec euismod dui. Ut accumsan mollis aliquam. Nam vel molestie sapien. Morbi ex massa, cursus in porta vehicula, tempor non leo. Nulla ultricies quam eu mauris mollis semper. Curabitur erat diam, pharetra et tincidunt non, tempor vitae mauris. Nullam aliquam mi in justo blandit, et consectetur augue malesuada.
+
+Praesent vitae lacinia tortor. Ut vitae auctor lorem. Integer sem nibh, dapibus ut commodo quis, ornare vestibulum neque. Donec malesuada sodales arcu, sit amet feugiat dui. Nunc ante risus, tempus vel libero non, dapibus consectetur lectus. In hac habitasse platea dictumst. Nullam ac justo in ante faucibus pharetra vel vel ante. Donec ultrices dignissim semper. Ut porttitor id felis eget tincidunt. Proin egestas eget est eget gravida.
+
+[VegaLite className:"inset" data:complaintsVL spec:`{
+  mark: "point",
+  encoding: {
+    x: {
+      field: "totalComplaints",
+      type: "quantitative"
+    },
+    y: {
+      field: "percentTimelyResponse",
+      type: "quantitative"
+    }
+  }
+}` /]
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In hac habitasse platea dictumst. Sed porttitor risus non augue hendrerit, vel vulputate diam congue. Nam venenatis mattis turpis a ultricies. Suspendisse consequat leo a dui malesuada viverra. Nam sed erat lectus. Praesent ut dolor pharetra, vestibulum enim in, dapibus ante.
+
+[Button onClick:`scrollTo(0, refs.ipsum.y)`]
+Scroll Test
+[/Button]
+
+Proin in lobortis mi. Nullam tincidunt semper ornare. Etiam sit amet nibh tempor, vestibulum libero vel, feugiat massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet ligula sed nisi tincidunt iaculis. Vivamus ullamcorper velit risus, eu ornare diam imperdiet a. Sed a eros viverra, tempor magna quis, tristique turpis. Vivamus ac lectus non ex dapibus vehicula at non eros.
+
+Sed leo ipsum, vehicula a sodales non, pretium et diam. Aenean eu mattis quam. Donec condimentum ex et dictum lacinia. Fusce tempus ultrices ante, at vestibulum tortor malesuada sed. Ut lacinia mollis ante, nec cursus nulla dictum et. In sodales nibh ac arcu commodo, at ullamcorper arcu faucibus. Proin ut tellus vel sapien facilisis ornare.
+
+Morbi ac ultrices ante. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer eleifend nisl sed felis dictum volutpat. Etiam condimentum accumsan justo. Etiam neque nisl, ornare in quam ut, imperdiet finibus odio. Nullam eget pulvinar elit, at vestibulum dui. Aenean porttitor magna a sem gravida, nec tincidunt neque convallis. Nulla scelerisque, nulla vitae posuere aliquet, elit nisi dignissim enim, vel suscipit nulla velit ac orci.
+
+[/section]

@@ -1,0 +1,142 @@
+[
+  {
+    "key": "Bank of America",
+    "values": {
+      "totalComplaints": 64365,
+      "percentTimelyResponse": 0.9757321525673891,
+      "percentCustomerDisputed": 0,
+      "issues": [
+        {
+          "key": "Deposits and withdrawals",
+          "values": 3604
+        }
+      ]
+    }
+  },
+  {
+    "key": "Wells Fargo & Company",
+    "values": {
+      "totalComplaints": 51998,
+      "percentTimelyResponse": 0.9545559444594023,
+      "percentCustomerDisputed": 0,
+      "issues": [
+        {
+          "key": "Managing the loan or lease",
+          "values": 1265
+        }
+      ]
+    }
+  },
+  {
+    "key": "Equifax",
+    "values": {
+      "totalComplaints": 45788,
+      "percentTimelyResponse": 0.9999781602166506,
+      "percentCustomerDisputed": 0,
+      "issues": [
+        {
+          "key": "Incorrect information on credit report",
+          "values": 32670
+        }
+      ]
+    }
+  },
+  {
+    "key": "Experian",
+    "values": {
+      "totalComplaints": 43071,
+      "percentTimelyResponse": 0.9998606951312948,
+      "percentCustomerDisputed": 0,
+      "issues": [
+        {
+          "key": "Credit monitoring or identity protection",
+          "values": 1614
+        }
+      ]
+    }
+  },
+  {
+    "key": "JPMorgan Chase & Co.",
+    "values": {
+      "totalComplaints": 41326,
+      "percentTimelyResponse": 0.9978705899433771,
+      "percentCustomerDisputed": 0,
+      "issues": [
+        {
+          "key": "Loan servicing, payments, escrow account",
+          "values": 5232
+        }
+      ]
+    }
+  },
+  {
+    "key": "TransUnion Intermediate Holdings, Inc.",
+    "values": {
+      "totalComplaints": 37314,
+      "percentTimelyResponse": 0.9999464008147076,
+      "percentCustomerDisputed": 0,
+      "issues": [
+        {
+          "key": "Unable to get credit report/credit score",
+          "values": 2489
+        }
+      ]
+    }
+  },
+  {
+    "key": "Citibank",
+    "values": {
+      "totalComplaints": 33450,
+      "percentTimelyResponse": 0.989745889387145,
+      "percentCustomerDisputed": 0,
+      "issues": [
+        {
+          "key": "Billing statement",
+          "values": 684
+        }
+      ]
+    }
+  },
+  {
+    "key": "Ocwen",
+    "values": {
+      "totalComplaints": 23678,
+      "percentTimelyResponse": 0.9771095531717205,
+      "percentCustomerDisputed": 0,
+      "issues": [
+        {
+          "key": "Loan modification,collection,foreclosure",
+          "values": 10930
+        }
+      ]
+    }
+  },
+  {
+    "key": "Capital One",
+    "values": {
+      "totalComplaints": 19452,
+      "percentTimelyResponse": 0.9966070326958667,
+      "percentCustomerDisputed": 0,
+      "issues": [
+        {
+          "key": "Billing disputes",
+          "values": 2034
+        }
+      ]
+    }
+  },
+  {
+    "key": "Nationstar Mortgage",
+    "values": {
+      "totalComplaints": 15755,
+      "percentTimelyResponse": 0.9919390669628689,
+      "percentCustomerDisputed": 0,
+      "issues": [
+        {
+          "key": "Loan modification,collection,foreclosure",
+          "values": 7175
+        }
+      ]
+    }
+  }
+]
