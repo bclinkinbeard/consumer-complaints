@@ -1,7 +1,10 @@
 module.exports = {
+"link": require('/Users/mathisonian/projects/idyll/idyll/src/components/link'),
+"quote-display": require('/Users/mathisonian/projects/complaints/components/quote-display'),
+"aside": require('/Users/mathisonian/projects/complaints/components/aside'),
 "chart": require('/Users/mathisonian/projects/idyll/idyll/src/components/chart'),
-"table": require('/Users/mathisonian/projects/consumer-complaints/components/table'),
-"display-var": require('/Users/mathisonian/projects/idyll/idyll/src/components/display-var'),
-"vega-lite": require('/Users/mathisonian/projects/consumer-complaints/components/vega-lite'),
-"button": require('/Users/mathisonian/projects/idyll/idyll/src/components/button')
+"complaints-table": require('/Users/mathisonian/projects/complaints/components/complaints-table'),
+"response-table": require('/Users/mathisonian/projects/complaints/components/response-table'),
+"table": require('/Users/mathisonian/projects/complaints/components/table'),
+"dynamic-text": require('/Users/mathisonian/projects/complaints/components/dynamic-text')
 } 

@@ -29,6 +29,10 @@ class Quote extends IdyllComponent {
     }, 6000);
   }
 
+  formatText(text) {
+    return text.replace(/\\n/g, ' ').replace(/{(\$\d+\.?\d*)}/g, '$1');
+  }
+
   render() {
     if (this.props.running) {
       this.initializeInterval();
@@ -36,8 +40,8 @@ class Quote extends IdyllComponent {
     return (
       <div className="quote">
         <div className="content">
-          {this.state.quote['Consumer complaint narrative'].replace(/\\n/g, ' ')}
-          <div className="attribution">Miami, FL <span className="company">{this.state.quote.Company}</span></div>
+          {this.formatText(this.state.quote['Consumer complaint narrative'])}
+          <div className="attribution"><span className="company">{this.state.quote.Company}</span></div>
         </div>
       </div>
     );

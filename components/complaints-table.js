@@ -13,7 +13,7 @@ class TableComponent extends IdyllComponent {
         'totalComplaints': d.values.totalComplaints,
         'percentTimelyResponse': Math.round(d.values.percentTimelyResponse * 100 * 10) / 10,
         'percentCustomerDisputed': Math.round(d.values.percentCustomerDisputed * 100 * 10) / 10,
-        'topComplaint': d.values.issues[0].key
+        'topIssue': d.values.topIssue
       };
     });
     return (
@@ -23,7 +23,7 @@ class TableComponent extends IdyllComponent {
             return (
               <Tr key={i}>
                 <Td column="Company">{d.company}</Td>
-                <Td column="Top Complaint">{d.topComplaint}</Td>
+                <Td column="Most Frequent Issue">{d.topIssue}</Td>
                 <Td column="Total Complaints" className="number">{d.totalComplaints}</Td>
                 <Td column="% Timely Response"className="number">{d.percentTimelyResponse}</Td>
                 {/*<Td column="% Customer Disputed" className="number">{Math.round(d.percentCustomerDisputed * 100 * 10) / 10}</Td>*/}

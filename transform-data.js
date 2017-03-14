@@ -62,14 +62,26 @@ fs.createReadStream('./data/consumer-complaints.csv')
 
     // fs.writeFileSync('data/complaints-by-date.json', JSON.stringify(dateCount, null, 2));
 
-  
+
     fs.writeFileSync('data/narratives.json', JSON.stringify(rows.filter(d => {
       const n = d['Consumer complaint narrative'];
       if (n) {
-        return n.length < 300 && n.indexOf('XXXX') === -1;
+        return n.length < 250 && n.indexOf('XXXX') === -1;
       }
     }).slice(0, 300), null, 2));
-  
+
+
+
+    fs.writeFileSync('data/narratives-ecg.json', JSON.stringify(rows.filter(d => {
+      if (d['Company'] !== 'Encore Capital Group') {
+        return false;
+      }
+      const n = d['Consumer complaint narrative'];
+      if (n) {
+        return n.length < 250 && n.indexOf('XXXX') === -1;
+      }
+    }).slice(0, 300), null, 2));
+
 
 
   });

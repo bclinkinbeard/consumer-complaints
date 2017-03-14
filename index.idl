@@ -2,8 +2,10 @@
 [data name:"complaintsByDate" source:"complaints-by-date" /]
 [data name:"complaints" source:"complaints" /]
 [data name:"responses" source:"company-responses" /]
-[data name:"complaintsVL" source:"complaints-vl" /]
 [data name:"quotes" source:"narratives" /]
+[data name:"ecg" source:"narratives-ecg" /]
+[data name:"wrongDebt" source:"wrong-debt" /]
+[data name:"paidDebt" source:"paid-debt" /]
 
 [img className:"logo" src:"https://idyll-lang.github.io/idyll/images/logo.png" /]
 
@@ -25,74 +27,117 @@ By: [link text:"Matthew Conlen" href:"https://twitter.com/mathisonian" /]
 
 [section ref:"body" className:"article-body"]
 
-The Consumer Financial Protection Bureau (CFPB) is a lesser known 
-government office meant to protect consumers. 
-Created in the wake of the financial crisis, the bureau has been collecting 
-consumers' complaints since 2011, 
+The Consumer Financial Protection Bureau (CFPB) is a lesser known
+government office meant to protect consumers.
+Created in the wake of the financial crisis, the bureau has been collecting
+consumers' complaints since 2011,
 and requiring that the companies provide a timely response to the complaint. All of these records
 are stored in a database and are [link text:"available to the public" href:"https://www.consumerfinance.gov/data-research/consumer-complaints/" /].
 
-The records are anonymized, but may still contain the original
-"complaint narrative", as the CFBP calls it. The quotes below 
-are randomly taken from the database. 
-
+The records are anonymized, but many still contain the
+consumer's complaint in their own words, or the
+"consumer complaint narrative", as the CFBP calls it. The quotes below
+are randomly taken from the database.
 
 [QuoteDisplay quotes:quotes running:`true` /]
 
 
-The number of complaints submitted each month has been steadily increasing since the 
-bureau's creation. There were over 20,000 sumbitted in January 2017 alone.
-
-
-[relative]
-
-This trend may be optimistic. In February 
-[link text:"Bloomberg reported" href:"https://www.bloomberg.com/news/articles/2017-02-08/the-cfpb-keeps-a-database-that-banks-can-t-wait-to-wipe" /]
-that the CFPB is "a prime target for a Trump administration that has vowed to rewrite 
-Obama-era financial rules and has suggested it will change the consumer bureau’s approach to policing financial markets."
-
-Given that, it seemed an opportune time to dig into the database 
-and see what I could learn.
-  [div className:"pie"]
+[aside]
   [Chart type:"time" data:`complaintsByDate` /]
   [caption]Complaints sent to the CFPB each month[/caption]
-  [/div]
-[/relative]
+[/aside]
+
+The number of complaints submitted each month has been steadily increasing since the
+bureau's creation. There were over 20,000 sumbitted in January 2017 alone.
+
+This trend may be optimistic. In February [link text:"Bloomberg reported" href:"https://www.bloomberg.com/news/articles/2017-02-08/the-cfpb-keeps-a-database-that-banks-can-t-wait-to-wipe" /]
+that the CFPB is "a prime target for a Trump administration that has vowed to rewrite
+Obama-era financial rules and has suggested it will change the consumer bureau’s approach to policing financial markets."
+
+Given that, it seemed an opportune time to dig into the database
+and see what I could learn.
 
 ## The Biggest Offenders
 
-The most obvious question to ask is "What is the most complained about company in America?" That honor goes to 
-the **Bank of America**, and it isn't even close. Bank of America has had 12,415 more complaints levied against 
+The most obvious question to ask is "What is the most complained about company in America?" That honor goes to
+the **Bank of America**, and it isn't even close. Bank of America has had 12,415 more complaints levied against
 it than the next runner up, Wells Fargo.
 
-The table below shows the top ten most-complained-about companies. Most of them are large financial institutions, and this makes 
-sense: many of the complaints deal with financial matters such as bank accounts, credit cards, morgages, loans, credit 
+The table below shows the top ten most-complained-about companies. Most of them are large financial institutions, and this makes
+sense: many of the complaints deal with financial matters such as bank accounts, credit cards, morgages, loans, credit
 reports, and debt collection. These are the exactly types of things that the bureau was set up to deal with.
 
 [ComplaintsTable data:complaints /]
 
-One of the major services that the CFPB provides is requiring companies to respond to complaints within a certain 
-timeframe (typically about two weeks). And it actually does work. About 97% of the registered complaints 
-are marked as having received a response in a timely manner. This is important: if you spend some time looking 
-at the consumer narratives, you'll notice that it isn't uncommon for people to be confused about a debt, or 
-not understand why collectors are after them. Some people attempt to contact the company claiming a debt, 
+One of the major services that the CFPB provides is requiring companies to respond to complaints within a certain
+timeframe (typically about two weeks). And it actually does work. About 97% of the registered complaints
+are marked as having received a response in a timely manner. This is important: if you spend some time looking
+at the consumer narratives, you'll notice that it isn't uncommon for people to be confused about a debt, or
+not understand why collectors are after them. Some people attempt to contact the company claiming a debt,
 but turn to the Consumer Financial Protection Bureau after receiving no response.
 
-Whether or not consumers are happy 
+Whether or not consumers are happy
 with the responses that they get is harder to say with the given data. In the vast majority of cases, about 93%,
-the company chooses to provide no public response, or the only public response is to admit no 
+the company chooses to provide no public response, or the only public response is to admit no
 wrongdoing ("Company believes it acted appropriately as authorized by contract or law").
 
-[relative]
-[Table data:responses className:"responses" ref:"responses" /]
-[Chart type:"pie" className:"pie" /]
-[/relative]
+[aside]
+[Chart type:"pie" className:"pie" data:`[{x: '1', y:80793}, {x: '2', y:52476}, {x: '3', y:30745}, {x: 'Other', y:12196}]` colorScale:`['#008ABE', '#000000', '#888', '#fff']` /]
+[caption className:"pie"]Proportion of company public responses[/caption]
+[/aside]
+
+[ResponseTable data:responses className:"responses" ref:"responses" /]
 
 ## The Debt Collectors
 
-One of the most surprising things for me 
+After reading the text of many of the complaints, it became apparent that
+many of the complaints were from confused or scared consumers being pursued by debt collectors.
 
-## Explore
+In many cases they had no idea what the debt was about,
+or claimed the collectors were mistakenly pursuing them for a debt belonging to someone else.
+In fact, **Debt is not mine** is one of the most common issues. There are about 35,000 complaints in the
+database with this tag. There are also more than 15,000 complaints that the **Debt was paid**.
+
+By looking at the companies associated with those complaints, we can generate a list of the most
+incompetet (or malicious) debt collection agencies.
+
+#### Top companies pursuing the wrong person for a debt
+
+[Table data:`wrongDebt.slice(0,5)` className:"wrong-debt" /]
+
+The same companies that are wrongly pursuing debts are
+also the same ones that try to collect on debts that have already
+been paid. Notice the repeat offenders in the following table.
+
+[aside]
+[QuoteDisplay quotes:ecg running:`true` /]
+[/aside]
+
+[dynamicText mobile:"Above" desktop:"To the right" /]  is a selection complaints consumers had about the **Encore Capital Group**,
+possibly the worst company in America. Note, I didn't handpick any of these quotes,
+they are randomly selected from the complaint databse.
+
+#### Top companies pursuing a debt that has already been paid
+
+[Table data:`paidDebt.slice(0,5)` className:"paid-debt" /]
+
+
+In June of last year John Oliver [link text:"called out Encore Capital Group" href:"https://www.youtube.com/watch?v=hxUAntt1z2c" /] during a segment
+on debt buyers. The number of complaints against these debt collectors supports his position.
+
+## Conclusion
+
+This is just a rudimentary analysis. There may be many more things to learn by more closely analyzing the data contained in the
+CFPB's database. For example, each complaint has a zip code associated with it. Looking at where complaints are coming from
+geographically might reveal something about how companies operate in different parts of the country.
+
+I look forward to seeing other people look at this data, and hope that this organization will continue to exist, even under the
+current administration.
+
+[br/]
+[i]
+This document was created with [link href:"https://idyll-lang.github.io/idyll/" text:"Idyll" /], a new markup language for
+creating interactive documents. See the [link text:"markup used to create this page" href:"https://github.com/mathisonian/consumer-complaints/blob/master/index.idl"/].
+[/i]
 
 [/section]
-
