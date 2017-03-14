@@ -118,7 +118,7 @@ table {
   padding: 0;
   border-collapse: collapse;
   border-spacing: 0;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   width: 100%;
   text-align: left;
 }
@@ -136,11 +136,15 @@ th {
 }
 
 
-.responses th:nth-child(2), 
+.responses th:nth-child(3),
 th:nth-child(3), th:nth-child(4){
   text-align: right;
 }
-.responses td:nth-child(2) {
+.responses td:nth-child(3),
+.wrong-debt td:nth-child(2),
+.wrong-debt th:nth-child(2),
+.paid-debt th:nth-child(2),
+.paid-debt td:nth-child(2) {
   text-align: right;
 }
 
@@ -198,6 +202,11 @@ tspan {
   position: absolute;
 }
 
+.aside .quote {
+  height: 350px;
+}
+
+
 .quote .attribution {
   font-family: 'Karla', sans-serif;
   font-size: 16px;
@@ -227,9 +236,43 @@ caption {
 .relative {
   position: relative;
 }
-.pie {
+.aside {
   position: absolute;
-  top: 50px;
   width: 300px;
   right: calc((10vw + 600px + 150px) / -2);
+}
+
+.pie {
+  position: relative;
+}
+
+@media all and (max-width: 1200px) {
+  /* put your css styles in here */
+  .relative {
+    position: static;
+  }
+  .aside {
+    position: static;
+    width: 100%;
+    right: 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .article-title {
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .article-body {
+    width: 90vw;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .pie {
+    display: none;
+  }
 }
