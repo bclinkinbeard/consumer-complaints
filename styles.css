@@ -207,9 +207,15 @@ tspan {
 }
 
 .aside .quote {
-  height: 350px;
+  height: auto;
+  display: block;
 }
 
+.aside .quote .content {
+  height: auto;
+  display: block;
+  position: static;
+}
 
 .quote .attribution {
   font-family: 'Karla', sans-serif;
