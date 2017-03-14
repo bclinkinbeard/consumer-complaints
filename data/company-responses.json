@@ -1,0 +1,34 @@
+
+[
+  {
+    "Response": "Company has responded to the consumer and the CFPB and chooses not to provide a public response",
+    "Count": 80793
+  },{
+    "Response": "Company chooses not to provide a public response",
+    "Count": 52476
+  },{
+    "Response": "Company believes it acted appropriately as authorized by contract or law",
+    "Count": 30745
+  },{
+    "Response": "Company believes the complaint is the result of a misunderstanding",
+    "Count": 2734
+  },{
+    "Response": "Company disputes the facts presented in the complaint",
+    "Count": 2557
+  },{
+    "Response": "Company believes complaint caused principally by actions of third party outside the control or direction of the company",
+    "Count": 2361
+  },{
+    "Response": "Company believes complaint is the result of an isolated error",
+    "Count": 2106
+  },{
+    "Response": "Company can't verify or dispute the facts in the complaint",
+    "Count": 1457
+  },{
+    "Response": "Company can't verify or dispute the facts in the complaint",
+    "Count": 1457
+  },{
+    "Response": "Company believes complaint relates to a discontinued policy or procedure",
+    "Count": 39
+  }
+]
