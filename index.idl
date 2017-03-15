@@ -25,7 +25,7 @@ By: [link text:"Matthew Conlen" href:"https://twitter.com/mathisonian" /]
 
 [/section]
 
-[section ref:"body" className:"article-body"]
+[section className:"article-body"]
 
 The Consumer Financial Protection Bureau (CFPB) is a lesser known
 government office meant to protect consumers.
@@ -86,7 +86,7 @@ wrongdoing ("Company believes it acted appropriately as authorized by contract o
 [caption className:"pie"]Proportion of company public responses[/caption]
 [/aside]
 
-[ResponseTable data:responses className:"responses" ref:"responses" /]
+[ResponseTable data:responses className:"responses" /]
 
 ## The Debt Collectors
 
