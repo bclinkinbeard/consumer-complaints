@@ -259,6 +259,9 @@ caption {
 
 @media all and (max-width: 1200px) {
   /* put your css styles in here */
+  .desktop {
+    display: none;
+  }
   .relative {
     position: static;
   }
