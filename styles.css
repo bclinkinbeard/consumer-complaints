@@ -273,11 +273,11 @@ caption {
 
   .aside .quote {
     height: 250px;
-    display: 'flex';
+    display: flex;
   }
 
   .aside .quote .content {
-    height: 250px;
+    height: auto;
     position: absolute;
   }
 
