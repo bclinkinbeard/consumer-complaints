@@ -54,10 +54,14 @@ h1,h2,h3,h4,h5,h6{
   font-size: 16px;
   color: black;
 }
+
+a, a:visited {
+  color: #008ABE;
+}
+
 .byline a {
   color: black;
 }
-
 * {
   box-sizing: border-box;
 }
@@ -203,9 +207,15 @@ tspan {
 }
 
 .aside .quote {
-  height: 350px;
+  height: auto;
+  display: block;
 }
 
+.aside .quote .content {
+  height: auto;
+  display: block;
+  position: static;
+}
 
 .quote .attribution {
   font-family: 'Karla', sans-serif;
@@ -244,10 +254,14 @@ caption {
 
 .pie {
   position: relative;
+  top: 45px;
 }
 
 @media all and (max-width: 1200px) {
   /* put your css styles in here */
+  .desktop {
+    display: none;
+  }
   .relative {
     position: static;
   }
@@ -255,6 +269,16 @@ caption {
     position: static;
     width: 100%;
     right: 0;
+  }
+
+  .aside .quote {
+    height: 250px;
+    display: flex;
+  }
+
+  .aside .quote .content {
+    height: auto;
+    position: absolute;
   }
 
   .logo {

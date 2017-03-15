@@ -207,9 +207,15 @@ tspan {
 }
 
 .aside .quote {
-  height: 350px;
+  height: auto;
+  display: block;
 }
 
+.aside .quote .content {
+  height: auto;
+  display: block;
+  position: static;
+}
 
 .quote .attribution {
   font-family: 'Karla', sans-serif;
@@ -253,6 +259,9 @@ caption {
 
 @media all and (max-width: 1200px) {
   /* put your css styles in here */
+  .desktop {
+    display: none;
+  }
   .relative {
     position: static;
   }
@@ -260,6 +269,16 @@ caption {
     position: static;
     width: 100%;
     right: 0;
+  }
+
+  .aside .quote {
+    height: 250px;
+    display: flex;
+  }
+
+  .aside .quote .content {
+    height: auto;
+    position: absolute;
   }
 
   .logo {

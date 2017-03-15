@@ -26,11 +26,11 @@ class Quote extends IdyllComponent {
     }
     this.interval = setInterval(() => {
       this.updateQuote();
-    }, 6000);
+    }, 8000);
   }
 
   formatText(text) {
-    return text.replace(/\\n/g, ' ').replace(/{(\$\d+\.?\d*)}/g, '$1');
+    return text.replace(/\\n/g, ' ').replace(/{(\$\d+\.?\d*)}/g, '$1').replace(/ ([a-z]?\')/g, '$1');
   }
 
   render() {

@@ -36,7 +36,7 @@ are stored in a database and are [link text:"available to the public" href:"http
 
 The records are anonymized, but many still contain the
 consumer's complaint in their own words, or the
-"consumer complaint narrative", as the CFBP calls it. The quotes below
+"consumer complaint narrative", as the CFPB calls it. The quotes below
 are randomly taken from the database.
 
 [QuoteDisplay quotes:quotes running:`true` /]
@@ -48,7 +48,7 @@ are randomly taken from the database.
 [/aside]
 
 The number of complaints submitted each month has been steadily increasing since the
-bureau's creation. There were over 20,000 sumbitted in January 2017 alone.
+bureau's creation. There were over 20,000 submitted in January 2017 alone.
 
 This trend may be optimistic. In February [link text:"Bloomberg reported" href:"https://www.bloomberg.com/news/articles/2017-02-08/the-cfpb-keeps-a-database-that-banks-can-t-wait-to-wipe" /]
 that the CFPB is "a prime target for a Trump administration that has vowed to rewrite
@@ -64,7 +64,7 @@ the **Bank of America**, and it isn't even close. Bank of America has had 12,415
 it than the next runner up, Wells Fargo.
 
 The table below shows the top ten most-complained-about companies. Most of them are large financial institutions, and this makes
-sense: many of the complaints deal with financial matters such as bank accounts, credit cards, morgages, loans, credit
+sense: many of the complaints deal with financial matters such as bank accounts, credit cards, mortgages, loans, credit
 reports, and debt collection. These are the exactly types of things that the bureau was set up to deal with.
 
 [ComplaintsTable data:complaints /]
@@ -99,7 +99,7 @@ In fact, **Debt is not mine** is one of the most common issues. There are about 
 database with this tag. There are also more than 15,000 complaints that the **Debt was paid**.
 
 By looking at the companies associated with those complaints, we can generate a list of the most
-incompetet (or malicious) debt collection agencies.
+incompetent (or malicious) debt collection agencies.
 
 #### Top companies pursuing the wrong person for a debt
 
@@ -115,7 +115,7 @@ been paid. Notice the repeat offenders in the following table.
 
 [dynamicText mobile:"Above" desktop:"To the right" /]  is a selection complaints consumers had about the **Encore Capital Group**,
 possibly the worst company in America. Note, I didn't handpick any of these quotes,
-they are randomly selected from the complaint databse.
+they are randomly selected from the complaint database.
 
 #### Top companies pursuing a debt that has already been paid
 
