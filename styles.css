@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Fira+Mono:400,500,700|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i');
+
+/*
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Fira Mono', monospace;
+*/
+
+* {
+  box-sizing: border-box;
+}
 
 html {
   margin: 0;
@@ -8,19 +18,27 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #000;
-  font-family: 'Karla', sans-serif;
+  color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #fafafa;
 }
 
 h1,h2,h3,h4,h5,h6{
   margin: 40px 0 20px 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.75rem;
 }
 
 .article {
   max-width: 90vw;
   margin: 0 auto;
-  background: #fff;
+  background: white;
+  padding: 60px 0;
   margin-bottom: 60px;
 }
 
@@ -36,42 +54,44 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .hed {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  font-weight: 700;
-  margin-top: 20px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 100;
+  margin: 20px 0 20px;
 }
 
 .dek {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   display: block;
-  font-size: 24px;
-  color: #008ABE;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #13b77c;
 }
-.byline {
-  margin-top: 15px;
-  font-size: 16px;
+
+.byline p {
+  font-family: 'Fira Mono', monospace;
+  font-size: .95rem;
+  line-height: 1rem;
   color: black;
 }
 
 a, a:visited {
-  color: #008ABE;
+  color: #350bd5;
+}
+
+a:hover {
+  color: #290b9d;
 }
 
 .byline a {
   color: black;
 }
-* {
-  box-sizing: border-box;
-}
 
 .article-body {
-  font-size: 16px;
-  line-height: 1.5;
   width: 600px;
   margin-left: 10vw;
-  color: #00171F;
   margin-top: 45px;
 }
 
@@ -82,7 +102,7 @@ pre {
 
 pre code {
   background: #F2F3F2;
-  color: #000;
+  color: black;
   padding: 20px 15px;
   width: 100%;
   display: block;
@@ -90,7 +110,7 @@ pre code {
 }
 code {
   background: #F2F3F2;
-  color: #000;
+  color: black;
   padding: 1px 5px;
 }
 
@@ -109,9 +129,10 @@ input {
 }
 
 thead {
-  font-family: Helvetica, Arial,  sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
   padding: 10px;
-  color: #000;
+  color: black;
   border-bottom: solid 2px black;
   vertical-align: bottom;
 }
@@ -130,7 +151,7 @@ table {
 td {
   padding: 10px 10px;
   font-size: 12px;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   vertical-align: top;
   max-width: 75%;
 }
@@ -160,11 +181,12 @@ tr.selected {
   background-color: #ccc;
 }
 td.number {
+  font-family: 'Fira Mono', monospace;
   text-align: right;
 }
 
 tspan {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 12px;
 }
 
@@ -175,6 +197,8 @@ tspan {
   left: 30px;
   width: 47px;
   height: 47px;
+  padding: 5px;
+  background: #fafafa;
 }
 
 .quotes {
@@ -191,7 +215,7 @@ tspan {
   width: 100%;
   /*text-align: center;*/
   /*text-transform: uppercase;*/
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Archivo Black', Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 22px;
   margin: 0 auto;
@@ -218,18 +242,17 @@ tspan {
 }
 
 .quote .attribution {
-  font-family: 'Karla', sans-serif;
-  font-size: 16px;
-  /*text-align: center;*/
+  font-family: 'Fira Mono', monospace;
+  font-size: .85rem;
+  line-height: 1rem;
   color: #888;
-  font-style: italic;
-  margin-top: 15px;
+  margin: 20px 0 0 0;
   font-weight: normal;
 }
 
 .quote .company {
+  display: block;
   color: red;
-  margin-left: 5px;
 }
 
 caption {

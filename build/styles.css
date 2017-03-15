@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Playfair+Display:700');
 
 html {
@@ -9,7 +11,7 @@ body {
   margin: 0;
   padding: 0;
   color: #000;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Muli', 'Karla', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -43,7 +45,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .dek {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Muli', 'Karla', sans-serif;
   margin: 0;
   display: block;
   font-size: 24px;
@@ -130,7 +132,7 @@ table {
 td {
   padding: 10px 10px;
   font-size: 12px;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Muli', 'Muli', 'Karla', sans-serif;
   vertical-align: top;
   max-width: 75%;
 }
@@ -164,7 +166,7 @@ td.number {
 }
 
 tspan {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Muli', 'Karla', sans-serif;
   font-size: 12px;
 }
 
@@ -218,7 +220,7 @@ tspan {
 }
 
 .quote .attribution {
-  font-family: 'Karla', sans-serif;
+  font-family: 'Muli', 'Karla', sans-serif;
   font-size: 16px;
   /*text-align: center;*/
   color: #888;
